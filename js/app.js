@@ -2,14 +2,13 @@
 
 const App = (() => {
   const GAMES = [
-    { id: 'memory',        emoji: '🃏', title: 'Parejas',          color: 'sage',  init: () => GameMemory.init(8) },
+    { id: 'memory',        emoji: '🃏', title: 'Parejas',          color: 'sage',  init: () => GameMemory.init(6) },
     { id: 'cualSobra',     emoji: '❓', title: '¿Cuál sobra?',     color: 'rose',  init: () => GameCualSobra.init() },
     { id: 'secuencias',    emoji: '🔢', title: 'Secuencias',       color: 'sky',   init: () => GameSecuencias.init() },
     { id: 'memoriaBreve',  emoji: '⏱️', title: 'Memoria breve',    color: 'amber', init: () => GameMemoriaBreve.init() },
     { id: 'asociaciones',  emoji: '🔗', title: 'Asociaciones',     color: 'lav',   init: () => GameAsociaciones.init() },
     { id: 'ordenLogico',   emoji: '📋', title: 'Orden lógico',     color: 'sage',  init: () => GameOrdenLogico.init() },
     { id: 'atencionVisual',emoji: '👁️', title: 'Atención visual',  color: 'rose',  init: () => GameAtencionVisual.init() },
-    { id: 'sudoku',        emoji: '🔲', title: 'Sudoku',           color: 'sky',   init: () => GameSudoku.init() },
     { id: 'palabras',      emoji: '🔤', title: 'Palabras',         color: 'amber', init: () => GamePalabras.init() },
     { id: 'categorias',    emoji: '📦', title: 'Categorías',       color: 'lav',   init: () => GameCategorias.init() },
   ];

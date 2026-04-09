@@ -24,7 +24,7 @@ const DATA = {
       { items: ['Médico', 'Maestro', 'Carpintero', 'Novela'], odd: 'Novela', reason: 'Los demás son profesiones' },
       { items: ['Río', 'Mar', 'Lago', 'Montaña'], odd: 'Montaña', reason: 'Los demás son masas de agua' },
       { items: ['Perro', 'Gato', 'Pájaro', 'Tractor'], odd: 'Tractor', reason: 'Los demás son animales' },
-      { items: ['Ciruela', 'Uva', 'Melocotón', 'Tomate'], odd: 'Tomate', reason: 'Los demás son frutas dulces' },
+      { items: ['Ciruela', 'Uva', 'Melocotón', 'Martillo'], odd: 'Martillo', reason: 'Los demás son frutas' },
     ],
     normal: [
       { items: ['Madrid', 'París', 'Berlín', 'Amazonas'], odd: 'Amazonas', reason: 'Los demás son capitales europeas' },
@@ -33,7 +33,7 @@ const DATA = {
       { items: ['Fútbol', 'Tenis', 'Natación', 'Ajedrez'], odd: 'Ajedrez', reason: 'Los demás son deportes físicos' },
       { items: ['Madrid', 'Barcelona', 'Sevilla', 'Lima'], odd: 'Lima', reason: 'Los demás son ciudades españolas' },
       { items: ['Cuadro', 'Triángulo', 'Círculo', 'Ventana'], odd: 'Ventana', reason: 'Los demás son figuras geométricas' },
-      { items: ['Plátano', 'Limón', 'Mango', 'Tomate'], odd: 'Tomate', reason: 'Los demás son frutas dulces' },
+      { items: ['Plátano', 'Limón', 'Mango', 'Sartén'], odd: 'Sartén', reason: 'Los demás son frutas' },
       { items: ['Pino', 'Roble', 'Olivo', 'Clavel'], odd: 'Clavel', reason: 'Los demás son árboles' },
       { items: ['Violín', 'Viola', 'Cello', 'Trompeta'], odd: 'Trompeta', reason: 'Los demás son instrumentos de cuerda' },
       { items: ['Venus', 'Marte', 'Júpiter', 'Luna'], odd: 'Luna', reason: 'Los demás son planetas' },
@@ -55,8 +55,8 @@ const DATA = {
       { items: ['Himno', 'Bandera', 'Escudo', 'Presidente'], odd: 'Presidente', reason: 'Los demás son símbolos nacionales' },
       { items: ['Almería', 'Granada', 'Málaga', 'Valencia'], odd: 'Valencia', reason: 'Los demás son provincias andaluzas' },
       { items: ['Napoleón', 'César', 'Alejandro', 'Einstein'], odd: 'Einstein', reason: 'Los demás fueron conquistadores militares' },
-      { items: ['Hebrea', 'Árabe', 'China', 'Castellana'], odd: 'Castellana', reason: 'Las otras tienen escritura no latina' },
-      { items: ['Niño', 'Adolescente', 'Adulto', 'Anciano'], odd: 'Adolescente', reason: 'Los demás son etapas más definidas' },
+      { items: ['Hebrea', 'Árabe', 'China', 'Latina'], odd: 'Latina', reason: 'Las otras usan escrituras no latinas' },
+      { items: ['Niño', 'Adulto', 'Anciano', 'Cuchara'], odd: 'Cuchara', reason: 'Los demás son etapas de la vida' },
     ],
   },
 

@@ -78,7 +78,6 @@ const Progress = (() => {
       asociaciones: '🔗 Asociaciones',
       ordenLogico: '📋 Orden lógico',
       atencionVisual: '👁️ Atención visual',
-      sudoku: '🔲 Sudoku',
       palabras: '🔤 Palabras',
       categorias: '📦 Categorías',
     };
