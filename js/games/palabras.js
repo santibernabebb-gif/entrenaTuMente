@@ -11,7 +11,11 @@ const GamePalabras = (() => {
 
   function getPool() {
     const all = DATA.palabras;
-    return level === 'facil' ? all.filter(function(q) { return q.scrambled.length <= 4; }) : all;
+    // Filtro de seguridad: nunca mostrar una pregunta donde scrambled === answer
+    const valid = all.filter(function(q) {
+      return q.scrambled !== q.answer;
+    });
+    return level === 'facil' ? valid.filter(function(q) { return q.scrambled.length <= 4; }) : valid;
   }
 
   function init(onComplete) {

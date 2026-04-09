@@ -24,7 +24,8 @@ const GameMemory = (() => {
   }
 
   function init(level, onComplete) {
-    currentLevel = level || 6;
+    // Siempre empieza en fácil (6 parejas) salvo que se pida explícitamente otro nivel
+    currentLevel = (level !== undefined && level !== null) ? level : 6;
     sessionCallback = onComplete || null;
     const cfg = getConfig(currentLevel);
     const pool = pickEmojis(cfg.pairs);
