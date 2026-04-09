@@ -28,12 +28,9 @@ const Shared = (() => {
   }
 
   // Fixed: uses game name string so onclick works in all browsers
-  
-function levelSelector(currentLevel, gameName) {
-  return `
-    <div class="level-panel">
-      <div class="level-panel-title">Elige dificultad</div>
-      <div class="level-btns">
+  function levelSelector(currentLevel, gameName) {
+    return `
+      <div class="level-btns" style="margin-bottom:16px">
         <button class="level-btn ${currentLevel === 'facil' ? 'active' : ''}"
           onclick="${gameName}.setLevel('facil')">
           🌱 Fácil
@@ -43,9 +40,8 @@ function levelSelector(currentLevel, gameName) {
           ⭐ Normal
         </button>
       </div>
-    </div>
-  `;
-}
+    `;
+  }
 
   function resultScreen(correct, total, onReplayCall, onHomeCall) {
     const pct = Math.round((correct / total) * 100);

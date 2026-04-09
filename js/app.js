@@ -2,7 +2,7 @@
 
 const App = (() => {
   const GAMES = [
-    { id: 'memory',        emoji: '🃏', title: 'Parejas',          color: 'sage',  init: () => GameMemory.init(6) },
+    { id: 'memory',        emoji: '🃏', title: 'Parejas',          color: 'sage',  init: () => GameMemory.init(8) },
     { id: 'cualSobra',     emoji: '❓', title: '¿Cuál sobra?',     color: 'rose',  init: () => GameCualSobra.init() },
     { id: 'secuencias',    emoji: '🔢', title: 'Secuencias',       color: 'sky',   init: () => GameSecuencias.init() },
     { id: 'memoriaBreve',  emoji: '⏱️', title: 'Memoria breve',    color: 'amber', init: () => GameMemoriaBreve.init() },
