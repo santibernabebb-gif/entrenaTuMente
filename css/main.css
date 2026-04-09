@@ -366,7 +366,11 @@ body {
   flex-direction: column;
 }
 .card-back { background: linear-gradient(135deg, var(--sage) 0%, var(--sky) 100%); border: 3px solid rgba(255,255,255,0.4); font-size: 1.4rem; }
-.card-front { background: white; border: 3px solid #e8e8e8; transform: rotateY(180deg); font-size: 1.8rem; }
+.card-front { background: white; border: 3px solid #e8e8e8; transform: rotateY(180deg); font-size: 1.55rem;
+  font-weight: 800;
+  background: #f7f7f7;
+  color: var(--text-dark);
+  min-height: 72px; }
 
 .memory-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
 .memory-info span { font-weight: 700; color: var(--text-mid); font-size: 0.92rem; }
