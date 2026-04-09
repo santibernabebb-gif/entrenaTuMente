@@ -355,7 +355,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .memory-card.flipped { transform: rotateY(180deg); }
-.memory-card.matched { opacity: 0.7; pointer-events: none; }
+.memory-card.matched { pointer-events: none; transform: rotateY(180deg) scale(1.03); }
+.memory-card.matched .card-front { background: #dff4e3; border: 3px solid #2e7d32; color: #1b5e20; box-shadow: 0 0 0 3px rgba(46,125,50,0.15); }
 
 .card-face {
   position: absolute; inset: 0;

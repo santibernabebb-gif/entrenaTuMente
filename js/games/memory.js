@@ -2,7 +2,7 @@
 
 const GameMemory = (() => {
   let cards = [], flipped = [], matched = 0, moves = 0, locked = false;
-  let currentLevel = 8;
+  let currentLevel = 6;
   let startTime = null;
   let sessionCallback = null;
   const usedEmojis = [];
@@ -24,7 +24,7 @@ const GameMemory = (() => {
   }
 
   function init(level, onComplete) {
-    currentLevel = level || 8;
+    currentLevel = level || 6;
     sessionCallback = onComplete || null;
     const cfg = getConfig(currentLevel);
     const pool = pickEmojis(cfg.pairs);
@@ -48,7 +48,7 @@ const GameMemory = (() => {
       </div>
       <div class="memory-board ${cfgUse.cols}" id="memory-board">
         ${cards.map((c, i) => `
-          <div class="memory-card" id="mcard-${i}" onclick="GameMemory.flip(${i})">
+          <div class="memory-card" id="mcard-${i}" onclick="GameMemory.flip(${i})" aria-label="Carta ${i + 1}">
             <div class="card-face card-back">🌟</div>
             <div class="card-face card-front">${c.emoji}</div>
           </div>
