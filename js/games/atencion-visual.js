@@ -33,14 +33,14 @@ const GameAtencionVisual = (() => {
     answered = false;
     let itemsHTML = '';
     for (let i = 0; i < q.items.length; i++) {
-      itemsHTML += '<div class="attention-item" onclick="GameAtencionVisual.answer(' + i + ')" >' + q.items[i] + '</div>';
+      itemsHTML += '<div class="attention-item" onclick="GameAtencionVisual.answer(' + i + ')" style="background:' + (i === q.odd ? '#fff8e7' : '#f4f4f4') + '">' + q.items[i] + '</div>';
     }
     container.innerHTML =
       (!sessionCallback ? Shared.levelSelector(level, 'GameAtencionVisual') : '') +
       '<div class="game-score">Reto ' + (current+1) + ' de ' + questions.length + ' &middot; Aciertos: ' + correct + '</div>' +
       '<div class="game-prompt">' + q.question + '</div>' +
       '<div class="attention-grid cols-' + q.cols + '">' + itemsHTML + '</div>' +
-      '<p style="text-align:center;color:var(--text-light);font-size:0.9rem;font-weight:600;margin-top:8px;">Observa bien: la diferencia es pequeña. Toca el distinto.</p>';
+      '<p style="text-align:center;color:var(--text-light);font-size:0.9rem;font-weight:600;margin-top:8px;">Toca el que es diferente</p>';
   }
 
   function answer(i) {

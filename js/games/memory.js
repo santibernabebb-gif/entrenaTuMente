@@ -8,9 +8,9 @@ const GameMemory = (() => {
   const usedEmojis = [];
 
   function getConfig(level) {
-    if (level === 6) return { pairs: 6, cols: 'cols-3' };
-    if (level === 8) return { pairs: 8, cols: 'cols-4' };
-    return { pairs: 6, cols: 'cols-3' };
+    if (level === 6)  return { pairs: 6,  cols: 'cols-3' };
+    if (level === 8)  return { pairs: 8,  cols: 'cols-4' };
+    return { pairs: 8, cols: 'cols-4' };
   }
 
   function pickEmojis(count) {
@@ -42,13 +42,13 @@ const GameMemory = (() => {
         <span>Movimientos: <strong id="mem-moves">0</strong></span>
         <span>Parejas: <strong id="mem-matched">0</strong> / ${cfgUse.pairs}</span>
       </div>
-      <div class="level-btns level-btns-large" style="margin-bottom:16px">
+      <div class="level-btns" style="margin-bottom:16px">
         <button class="level-btn ${currentLevel===6?'active':''}" onclick="GameMemory.changeLevel(6)">🌱 Fácil</button>
         <button class="level-btn ${currentLevel===8?'active':''}" onclick="GameMemory.changeLevel(8)">⭐ Normal</button>
       </div>
       <div class="memory-board ${cfgUse.cols}" id="memory-board">
         ${cards.map((c, i) => `
-          <div class="memory-card" id="mcard-${i}" onclick="GameMemory.flip(${i})" aria-label="Carta ${i + 1}">
+          <div class="memory-card" id="mcard-${i}" onclick="GameMemory.flip(${i})">
             <div class="card-face card-back">🌟</div>
             <div class="card-face card-front">${c.emoji}</div>
           </div>
